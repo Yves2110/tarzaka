@@ -4,11 +4,12 @@
         font-family: "GRAM 01";}
 .log{
      font-family: "GRAM 01";
+     font-size: 3em !important;
 }
 .sidebar,.sidebar-brand-wrapper{
     background-color: #fcb46b!important;
 }
-.navbar,.content-wrapper,.dropdown-menu{
+.navbar,.content-wrapper,.dropdown-menu,.bg{
     background-image: linear-gradient(to right, #fcb46b, #fdc387, #fed1a3, #fddfc0, #fcedde) !important;
 }
 .menu-title: hover{
@@ -28,10 +29,24 @@
 .mdi-menu-down{
     color: #000000 !important;
 }
+.card{
+    background-color: #f7f1f1 !important;
+}
+.bande{
+    background-color: #d36d08 !important;
+    height: 5em;
+    width: 90%;
+    border-radius: 4px !important;
+    margin-left: 5em !important;
+}
+input{
+        height:3em !important;
+    background-color:rgb(235, 226, 226) !important;
+    }
  </style>
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo text-bold text-light fs-1 log" href="index.html">Tar'Zaka</a>
+        <a class="sidebar-brand brand-logo text-bold text-light log" href="index.html">Tar'Zaka</a>
         {{-- <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg"
                 alt="logo" /></a> --}}
     </div>
@@ -140,7 +155,7 @@
         </li>
         <li class="nav-item menu-items">
             <a class="nav-link btn-danger text-light"
-                href="">
+                href=" {{ route('logout') }} ">
                 <span class="menu-icon">
                     <i class="mdi mdi-exit-to-app"></i>
                 </span>

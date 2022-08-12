@@ -27,7 +27,7 @@
             </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link" href=" {{route('Locataires')}} ">
                 <span class="menu-icon">
                     <i class="mdi mdi-account-star"></i>
                 </span><span>Locataires</span>
@@ -118,7 +118,7 @@
                         </div>
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item preview-item">
+                    <a class="dropdown-item preview-item"  href=" {{ route('logout') }} ">
                         <div class="preview-thumbnail">
                             <div class="preview-icon bg-dark rounded-circle">
                                 <i class="mdi mdi-logout text-danger"></i>

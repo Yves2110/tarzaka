@@ -24,3 +24,11 @@ Route::get('/Login', function () {
 Route::get('/home', function () {
     return view('layouts.home');
 })->name('home');
+
+Route::get('/locataire', function () {
+    return view('pages.locataires');
+})->name('Locataires');
+
+Route::get('/AjoutLocataire', function () {
+    return view('pages.locataireform');
+})->name('Locataire_Form');
